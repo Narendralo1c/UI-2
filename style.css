@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+
+    height: 100vh;
+    width: 100%;
+    display: flex;
+}
+
+.container .text-section {
+    width: 50%;
+    display: flex;
+
+    justify-content: center;
+    flex-direction: column;
+    /* padding: 140px; */
+    align-items: center;
+}
+
+.container img {
+    width: 50%;
+}
+
+.container .text-section .sofaclub {
+    color: #C19972;
+    font-size: 15px;
+    padding-right: 400px;
+    padding-bottom: 30px;
+}
+
+.text-section form {
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+@media (max-width:768px) {
+    .container {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        text-align: center;
+    }
+    .container .text-section { width: 100%; height: auto;}
+    .container img{ width: 100%; height: auto;}
+}
